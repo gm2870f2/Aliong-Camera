@@ -135,10 +135,6 @@ nav ul li a:hover {
     background-repeat: no-repeat;
 }
 
-.hero {
-    background-color: black; /* Jika warna merah muncul, berarti masalah di gambar */
-}
-
 /* Overlay untuk memperjelas teks */
 .hero-overlay {
     position: absolute;

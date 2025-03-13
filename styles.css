@@ -1,0 +1,551 @@
+/* Menggunakan font Montserrat */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo */
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+/* Menu Navigasi */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Section Home */
+#home {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+/* Teks Selamat Datang */
+.home-text {
+    max-width: 50%;
+}
+
+.home-text h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.home-text p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+/* Gambar Selamat Datang */
+.home-image {
+    max-width: 45%;
+}
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text, .home-image {
+        max-width: 100%;
+    }
+
+    .home-image img {
+        margin-top: 20px;
+    }
+}
+
+/* Hero Section - Gambar Layar Penuh */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('FAB08721.jpg'); /* Cek path gambar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    background-color: black; /* Jika warna merah muncul, berarti masalah di gambar */
+}
+
+/* Overlay untuk memperjelas teks */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Lapisan transparan hitam */
+}
+
+/* Teks di tengah */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('background-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Efek Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Teks Hero */
+.hero-text {
+    z-index: 2;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Tombol Navigasi */
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 1.2em;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Testimonial Section */
+.testimonial {
+    background-color: #fff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.testimonial h2 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+/* Slider Testimonial */
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap; /* Agar bisa menyesuaikan jika layar kecil */
+    justify-content: center; /* Testimoni berada di tengah */
+    gap: 2em; /* Jarak antar testimoni */
+    padding: 20px;
+}
+
+.testimonial-item {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Lebar maksimum testimoni */
+    text-align: center;
+    flex: 1; /* Agar bisa fleksibel */
+    min-width: 250px; /* Ukuran minimum */
+}
+
+/* Promo Section */
+.promo {
+    background-color: #ffeb3b;
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.promo h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.promo p {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.promo .btn {
+    background-color: #ff6600;
+}
+
+.promo .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+}
+
+/* Styling Produk */
+#produk {
+    padding: 4em 2em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.kategori h3 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Grid Produk */
+.produk-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+/* Styling Box Produk */
+.produk-item {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produk-item:hover {
+    transform: scale(1.05);
+}
+
+/* Styling Gambar Produk */
+.produk-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Styling Nama Produk */
+.produk-item h4 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+/* Styling Harga */
+.harga {
+    font-size: 1.3em;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+/* Tombol */
+.btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Kontak Section */
+#kontak {
+    padding: 4em 2em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.kontak-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.kontak-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+.form-kontak {
+    background-color: #f8f8f8;
+    padding: 3em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3em;
+}
+
+.form-kontak h3 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.input-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+.info-kontak {
+    text-align: left;
+}
+
+.info-kontak h3 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.kontak-item {
+    margin-bottom: 2em;
+}
+
+.kontak-item h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.kontak-item p {
+    font-size: 1.2em;
+}
+
+.kontak-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kontak-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}

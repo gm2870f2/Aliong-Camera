@@ -617,76 +617,18 @@ nav ul li a:hover, nav ul li a.active {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-    transition: 0.3s;
 }
 
-.hero .overlay:hover {
-    transform: scale(1.05);
+/* Animasi Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Profil Perusahaan */
-.profil {
-    background-color: #f8f8f8;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* Tim Kami */
-.tim-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.anggota {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 250px;
-    transition: transform 0.3s;
-}
-
-.anggota:hover {
-    transform: scale(1.1);
-}
-
-.anggota img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Keunggulan */
-.keunggulan {
-    background: #f0f0f0;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.keunggulan-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.keunggulan-grid .item {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.keunggulan-grid .item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Footer */

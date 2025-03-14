@@ -554,17 +554,74 @@ footer {
     font-family: 'Arial', sans-serif;
 }
 
-/* Style Header */
+/* Container untuk menyusun konten lebih rapi */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header dengan navigasi */
 header {
-    background: url('header-bg.jpg') no-repeat center center/cover;
+    background: #333;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 60px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #ff9900;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/header-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* Section umum */
 section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -634,4 +691,3 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
-

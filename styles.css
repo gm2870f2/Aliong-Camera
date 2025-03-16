@@ -97,31 +97,6 @@ nav ul li a:hover {
     background-color: #e68900;
 }
 
-/* Styling untuk Hero Section (Selamat Datang) */
-.hero {
-    position: relative;
-    width: 100%;
-    height: 80vh; /* Menyesuaikan tinggi layar */
-    background-image: url('a2n.png'); /* Ganti dengan nama gambar yang sesuai */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-/* Overlay untuk efek gelap transparan */
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Transparansi untuk teks lebih jelas */
-}
-
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
     .home-container {
@@ -136,16 +111,6 @@ nav ul li a:hover {
     .home-image img {
         margin-top: 20px;
     }
-}
-
-/* Hero Section - Gambar Layar Penuh */
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 /* Overlay untuk memperjelas teks */

@@ -97,15 +97,29 @@ nav ul li a:hover {
     background-color: #e68900;
 }
 
-/* Gambar Selamat Datang */
-.home-image {
-    max-width: 45%;
+/* Styling untuk Hero Section (Selamat Datang) */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Menyesuaikan tinggi layar */
+    background-image: url('a2n.png'); /* Ganti dengan nama gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
-.home-image img {
+/* Overlay untuk efek gelap transparan */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparansi untuk teks lebih jelas */
 }
 
 /* Responsif untuk layar kecil */
